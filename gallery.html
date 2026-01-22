@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yearly Gallery | Sonatoni Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Year Grid Unit */
+        .year-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        /* Year Card Unit */
+        .year-card {
+            background: white;
+            padding: 40px 20px;
+            border-radius: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-color);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--saffron);
+            transition: 0.4s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .year-card i {
+            font-size: 3rem;
+            color: var(--saffron);
+            transition: 0.3s;
+        }
+
+        .year-card span {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--red-accent);
+        }
+
+        /* Hover Effect Unit */
+        .year-card:hover {
+            transform: translateY(-10px);
+            background: linear-gradient(135deg, var(--saffron), var(--deep-orange));
+            box-shadow: 0 15px 30px rgba(212, 64, 0, 0.2);
+        }
+
+        .year-card:hover i, .year-card:hover span {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo-area">
+            <a href="index.html" class="logo-text">Sonatoni Club</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+
+        
+        <h2 class="section-title">Memories Archive</h2>
+        <p style="margin-top: -30px; margin-bottom: 40px; color: #666;">Select a year to explore our cultural journey</p>
+
+        <div class="year-grid">
+            
+            <a href="Albums/2025.html" class="year-card">
+                <i class="fas fa-folder-open"></i>
+                <span>Year 2025</span>
+            </a>
+
+            <a href="gallery-2024.html" class="year-card">
+                <i class="fas fa-folder-open"></i>
+                <span>Year 2024</span>
+            </a>
+
+            <a href="gallery-2023.html" class="year-card">
+                <i class="fas fa-folder-open"></i>
+                <span>Year 2023</span>
+            </a>
+
+            <a href="gallery-2022.html" class="year-card">
+                <i class="fas fa-folder-open"></i>
+                <span>Year 2022</span>
+            </a>
+
+            <a href="gallery-2021.html" class="year-card">
+                <i class="fas fa-folder-open"></i>
+                <span>Year 2021</span>
+            </a>
+
+            <a href="gallery-2020.html" class="year-card">
+                <i class="fas fa-folder-open"></i>
+                <span>Year 2020</span>
+            </a>
+
+            <a href="gallery-2019.html" class="year-card">
+                <i class="fas fa-folder-open"></i>
+                <span>Year 2019</span>
+            </a>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2026 Sonatoni Club - Cultural Archive</p>
+    </footer>
+
+</body>
+</html>

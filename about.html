@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | Sonatoni Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* About Page Special Decoration */
+        
+        /* 1. Hero Section: বড় এবং আকর্ষণীয় টেক্সট */
+        .about-hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1519810755548-39cd217da494?w=1200'); /* ব্যাকগ্রাউন্ডে একটি মন্দিরের আর্কিটেকচার ইমেজ */
+            background-size: cover;
+            background-attachment: fixed;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* 2. Timeline Section: ক্লাবের অগ্রযাত্রা বোঝাতে */
+        .history-box {
+            border-left: 4px solid var(--saffron);
+            padding-left: 30px;
+            margin: 50px 0;
+            text-align: left;
+        }
+
+        /* 3. Stats Section: ক্লাবের শক্তি বোঝাতে (সংখ্যা দিয়ে) */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background: var(--saffron);
+            padding: 40px;
+            border-radius: 20px;
+            color: white;
+            margin: 60px 0;
+        }
+        .stat-item h2 { font-size: 2.5rem; margin-bottom: 5px; }
+
+        /* 4. Pillars of Faith Section: আইকন ভিত্তিক ডিজাইন */
+        .faith-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .faith-card {
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.03);
+            transition: 0.3s;
+        }
+        .faith-card i { font-size: 3rem; color: var(--deep-orange); margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo-area"><a href="index.html" class="logo-text">Sonatoni Club</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="committee.html">Committee</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <header class="about-hero">
+        <div class="container">
+            <h1 style="font-family: 'Playfair Display', serif; font-size: 3.5rem;">"সংগচ্ছধ্বং সংবদধ্বং সং বো মনাংসি জানতাম্।"</h1>
+            <p style="font-size: 1.2rem; max-width: 800px; margin: 20px auto;">, "একসাথে চলো, একসাথে কথা বলো, তোমাদের মন যেন এক হয়ে কাজ করে।"</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <div class="history-box">
+            <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">Our Legacy</h2>
+            <p>Founded with a vision to preserve the rich heritage of Sanatana Dharma, Sonatoni Club has been a beacon of light for students. We began our journey with a handful of dedicated souls and have now grown into a family of hundreds.</p>
+            <br>
+            <p>Our goal is simple: To provide a platform where spirituality meets modern education, creating balanced and compassionate leaders for tomorrow.</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h2>10+</h2>
+                <p>Years of Spiritual Journey</p>
+            </div>
+            <div class="stat-item">
+                <h2>50+</h2>
+                <p>Annual Events</p>
+            </div>
+            <div class="stat-item">
+                <h2>500+</h2>
+                <p>Active Members</p>
+            </div>
+            <div class="stat-item">
+                <h2>100%</h2>
+                <p>Devotion</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">What We Stand For</h2>
+
+        
+        <div class="faith-grid">
+            <div class="faith-card">
+                <i class="fas fa-om"></i>
+                <h3>Spiritual Growth</h3>
+                <p>Weekly prayers and Gita classes to nourish the soul.</p>
+            </div>
+            <div class="faith-card">
+                <i class="fas fa-users"></i>
+                <h3>Social Unity</h3>
+                <p>Breaking boundaries and building a community of brothers and sisters.</p>
+            </div>
+            <div class="faith-card">
+                <i class="fas fa-heart"></i>
+                <h3>Humanity</h3>
+                <p>Blood donation, charity, and helping those in need regardless of background.</p>
+            </div>
+        </div>
+
+        <div style="margin: 80px 0; padding: 50px; background: #FFF9F0; border-radius: 30px; border: 2px dashed var(--saffron);">
+            <h2 style="color: var(--red-accent);">Be a Part of Something Divine</h2>
+            <p>If you want to experience the true essence of our culture, join our journey today.</p>
+            <br>
+            <a href="join.html" class="btn" style="background: var(--deep-orange); color: white;">Register Now</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sonatoni Club - Established for Excellence</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year 2025 | Events Archive</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body { background-color: #fdfbf7; font-family: 'Poppins', sans-serif; margin: 0; }
+
+        /* --- Header Section --- */
+        .album-title {
+            text-align: center;
+            padding: 60px 20px 20px;
+            background: #fff;
+            border-bottom: 3px solid var(--saffron);
+        }
+
+        .album-title h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #333; }
+
+        /* --- Event Section Styling --- */
+        .event-section { margin: 40px auto; max-width: 1100px; padding: 0 20px; }
+
+        .event-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .event-header i { color: var(--saffron); font-size: 1.5rem; }
+        .event-header h2 { font-size: 1.6rem; color: #444; margin: 0; }
+
+        /* --- Small Thumbnails Grid (Masonry) --- */
+        .photo-gallery {
+            column-count: 3;
+            column-gap: 15px;
+        }
+
+        .photo-card {
+            background: white;
+            break-inside: avoid;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.3s ease;
+        }
+
+        .photo-card img {
+            width: 100%; /* Thumbnails stay within the column width */
+            border-radius: 8px;
+            display: block;
+            cursor: zoom-in;
+            transition: 0.4s;
+        }
+
+        .photo-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(255,153,51,0.2); }
+
+        /* --- Full Screen Lightbox Logic --- */
+        .lightbox {
+            display: none; /* Initially hidden */
+            position: fixed;
+            z-index: 10000;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Show when targeted via href */
+        .lightbox:target { display: flex; }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80vh;
+            border: 4px solid white;
+            border-radius: 5px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.5);
+        }
+
+        .close-btn {
+            position: absolute; top: 30px; right: 50px;
+            color: #fff; font-size: 60px; text-decoration: none; font-weight: 200;
+        }
+
+        .caption { color: #fff; margin-top: 20px; font-size: 1.1rem; letter-spacing: 1px; }
+
+        @media (max-width: 800px) { .photo-gallery { column-count: 2; } }
+        @media (max-width: 500px) { .photo-gallery { column-count: 1; } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo-area"><a href="../index.html" class="logo-text">Sonatoni Club</a></div>
+        <ul class="nav-links">
+            <li><a href="../gallery.html"><i class="fas fa-chevron-left"></i> Back to Years</a></li>
+        </ul>
+    </nav>
+
+    <div class="album-title">
+        <h1>2025 Cultural Archive</h1>
+        <p>A journey through our sacred celebrations</p>
+    </div>
+
+    <div class="container">
+
+
+
+
+
+        
+        <div class="event-section">
+            <div class="event-header">
+                <i class="fas fa-om"></i>
+                <h2>Janmashtami Celebration</h2>
+            </div>
+            <div class="photo-gallery">
+                <div class="photo-card">
+                    <a href="#j1"><img src="Jormastumi2025/jormastumi-1.jpg" alt="Janmashtami"></a> <!--1st image-->
+                </div>
+                <div id="j1" class="lightbox">
+                    <a href="#!" class="close-btn">&times;</a>
+                    <img src="../gallery/jormastumi-1.jpg">
+                    <p class="caption">Shri Krishna Janmashtami - Memory 1</p>
+                </div>
+
+
+
+                <div class="photo-card">
+                    <a href="#j2"><img src="Jormastumi2025/jormastumi-2.jpg" alt="Janmashtami"></a>  <!--2nd image-->
+                </div>
+                <div id="j2" class="lightbox">
+                    <a href="#!" class="close-btn">&times;</a>
+                    <img src="../gallery/jormastumi-2.jpg">
+                    <p class="caption">Shri Krishna Janmashtami - Memory 2</p>
+                </div>
+
+
+                <div class="photo-card">
+                    <a href="#j3"><img src="Jormastumi2025/jormastummi-3.jpg" alt="Janmashtami"></a>
+                </div>
+                <div id="j3" class="lightbox">
+                    <a href="#!" class="close-btn">&times;</a>
+                    <img src="../gallery/jormastumi-3.jpg">
+                    <p class="caption">Shri Krishna Janmashtami - Memory 3</p>
+                </div>
+
+                <div class="photo-card">
+                    <a href="#j4"><img src="Jormastumi2025/jormastummi-4.jpg" alt="Janmashtami"></a>
+                </div>
+                <div id="j4" class="lightbox">
+                    <a href="#!" class="close-btn">&times;</a>
+                    <img src="../gallery/jormastumi-4.jpg">
+                    <p class="caption">Shri Krishna Janmashtami - Memory 4</p>
+
+                </div>
+
+                <div class="photo-card">
+                    <a href="#j5"><img src="Jormastumi2025/jormastummi5.jpg" alt="Janmashtami"></a>
+                </div>
+                <div id="j5" class="lightbox">
+                    <a href="#!" class="close-btn">&times;</a>
+                    <img src="../gallery/jormastumi-5.jpg">
+                    <p class="caption">Shri Krishna Janmashtami - Memory 5</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    
+        <div class="event-section">
+            <div class="event-header">
+                <i class="fas fa-dharmachakra"></i>
+                <h2>Tithayatra </h2>
+            </div>
+            <div class="photo-gallery">
+                <div class="photo-card">
+                    <a href="#d1"><img src="Tithayatra2025/Tithayatra-1.jpg" alt="Tithayatra "></a>
+                </div>
+                <div id="d1" class="lightbox"><a href="#!" class="close-btn">&times;</a><img src="../gallery/durga1.jpg"><p class="caption">Durga Puja Highlights</p></div>
+
+                <div class="photo-card">
+                    <a href="#d2"><img src="Tithayatra2025/Tithayatra-2.jpg" alt="Tithayatra "></a>
+                </div>
+                <div id="d2" class="lightbox"><a href="#!" class="close-btn">&times;</a><img src="../gallery/durga2.jpg"></div>
+
+             
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        
+        <div class="event-section">
+            <div class="event-header">
+                <i class="fas fa-dharmachakra"></i>
+                <h2>Diwali </h2>
+            </div>
+            <div class="photo-gallery">
+                <div class="photo-card">
+                    <a href="#e1"><img src="Diwali2025/diwali-1.jpg" alt="Diwali 1"></a>
+                </div>
+                <div id="e1" class="lightbox"><a href="#!" class="close-btn">&times;</a><img src="../gallery/durga1.jpg"><p class="caption">Diwali</p></div>
+
+                <div class="photo-card">
+                    <a href="#e2"><img src="Diwali2025/diwali-2.jpg" alt="Diwali 2"></a>
+
+                </div>
+                <div id="e2" class="lightbox"><a href="#!" class="close-btn">&times;</a><img src="../gallery/durga2.jpg"></div>
+
+            
+                <div class="photo-card">
+                    <a href="#e3"><img src="Diwali2025/diwali-3.jpg" alt="Diwali 2"></a>
+
+                </div>
+                <div id="e3" class="lightbox"><a href="#!" class="close-btn">&times;</a><img src="../gallery/durga2.jpg"></div>
+
+                <div class="photo-card">
+                    <a href="#e4"><img src="Diwali2025/diwali-4.jpg" alt="Diwali 2"></a>
+
+                </div>
+                <div id="e4" class="lightbox"><a href="#!" class="close-btn">&times;</a><img src="../gallery/durga2.jpg"></div> 
+
+
+
+                <div class="photo-card">
+                    <a href="#e5"><img src="Diwali2025/diwali-5.jpg" alt="Diwali 2"></a>
+
+                </div>
+                <div id="e5" class="lightbox"><a href="#!" class="close-btn">&times;</a><img src="../gallery/durga2.jpg"></div>
+
+
+                <div class="photo-card">
+                    <a href="#e6"><img src="Diwali2025/diwali-6.jpg" alt="Diwali 2"></a>
+
+                </div>
+                <div id="e6" class="lightbox"><a href="#!" class="close-btn">&times;</a><img src="../gallery/durga2.jpg"></div>
+
+
+            </div>
+            
+
+        </div>
+
+
+    </div>
+
+    <footer style="text-align: center; padding: 60px 0; background: #fff; margin-top: 50px; border-top: 1px solid #eee;">
+        <p>&copy; 2026 Sonatoni Club | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

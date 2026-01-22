@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Committee | Sonatoni Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Committee Page Specific Styles */
+        .committee-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .profile-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-bottom: 5px solid var(--saffron);
+            transition: 0.4s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(255, 153, 51, 0.2);
+        }
+
+        .profile-img-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--bg-light);
+            outline: 2px solid var(--saffron);
+        }
+
+        .designation {
+            color: var(--deep-orange);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .member-name {
+            font-size: 1.3rem;
+            color: var(--text-color);
+            margin-bottom: 15px;
+        }
+
+        .social-connect a {
+            margin: 0 8px;
+            color: #ccc;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+
+        .social-connect a:hover {
+            color: var(--saffron);
+        }
+
+        .category-title {
+            margin-top: 60px;
+            color: var(--red-accent);
+            border-left: 5px solid var(--saffron);
+            padding-left: 15px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo-area">
+            <a href="index.html" class="logo-text">Sonatoni Club</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="committee.html" class="active">Committee</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2 class="section-title">Executive Committee 2025-26</h2>
+        <p>The dedicated souls leading our cultural and spiritual mission.</p>
+
+        <h3 class="category-title">Core Leadership</h3>
+        <div class="committee-grid">
+            
+            <div class="profile-card">
+                <div class="profile-img-container">
+                    <img src="Committee/PRITOM KUMAR MONDOL.png" alt="President" class="profile-img">
+                </div>
+                <span class="designation">President</span>
+                <h3 class="member-name">PRITOM KUMAR MONDOL</h3>
+                <div class="social-connect">
+                    <a href="https://www.facebook.com/daffodilvarsity.edu.bd"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-img-container">
+                    <img src="Committee/Dipak Chandra Das.png" alt="Secretary" class="profile-img">
+                </div>
+                <span class="designation">General Secretary</span>
+                <h3 class="member-name">Dipak Chandra Das</h3>
+                <div class="social-connect">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <h3 class="category-title">Executive Members</h3>
+        <div class="committee-grid">
+            
+            <div class="profile-card">
+                <div class="profile-img-container">
+                    <img src="Committee/SOUDHA CHAKRABARTTY.png" alt="Member" class="profile-img">
+                </div>
+                <span class="designation">Treasurer</span>
+                <h3 class="member-name">SOUDHA CHAKRABARTTY</h3>
+                <div class="social-connect">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sonatoni Club - Leadership Section</p>
+    </footer>
+
+</body>
+</html>

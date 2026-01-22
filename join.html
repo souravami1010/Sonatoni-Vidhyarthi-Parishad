@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | Sonatoni Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Registration Page Specific Styles */
+        .join-body {
+            background: linear-gradient(rgba(255, 153, 51, 0.1), rgba(255, 153, 51, 0.1)), 
+                        url('https://images.unsplash.com/photo-1561330324-47402eda217a?w=1200');
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .reg-container {
+            max-width: 800px;
+            margin: 60px auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            border-top: 8px solid var(--saffron);
+            backdrop-filter: blur(10px);
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .form-header i {
+            font-size: 3rem;
+            color: var(--saffron);
+            margin-bottom: 15px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            text-align: left;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+
+        .input-group input, .input-group select, .input-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #eee;
+            border-radius: 12px;
+            font-family: 'Poppins', sans-serif;
+            transition: 0.3s;
+            background: #fdfdfd;
+        }
+
+        .input-group input:focus {
+            border-color: var(--saffron);
+            outline: none;
+            box-shadow: 0 0 10px rgba(255, 153, 51, 0.2);
+        }
+
+        .submit-btn {
+            background: linear-gradient(90deg, var(--saffron), var(--deep-orange));
+            color: white;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 20px;
+            box-shadow: 0 10px 20px rgba(230, 126, 34, 0.3);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(230, 126, 34, 0.4);
+        }
+
+        .terms {
+            font-size: 0.85rem;
+            color: #777;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="join-body">
+
+    <nav>
+        <div class="logo-area"><a href="index.html" class="logo-text">Sonatoni Club</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="committee.html">Committee</a></li>
+            <li><a href="join.html" class="active">Join Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="reg-container">
+            <div class="form-header">
+                <i class="fas fa-user-plus"></i>
+                <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--red-accent);">Become a Member</h2>
+                <p>Fill in the details below to join our divine family.</p>
+            </div>
+
+            <form action="#">
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="example@mail.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="+880 1XXX XXXXXX" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Department/Batch</label>
+                        <input type="text" placeholder="e.g. CSE - 2024" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Student ID</label>
+                        <input type="text" placeholder="Enter your ID" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Blood Group</label>
+                        <select required>
+                            <option value="">Select Group</option>
+                            <option>A+</option><option>A-</option>
+                            <option>B+</option><option>B-</option>
+                            <option>O+</option><option>O-</option>
+                            <option>AB+</option><option>AB-</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-group" style="margin-top: 20px;">
+                    <label>Why do you want to join Sonatoni Club?</label>
+                    <textarea rows="4" placeholder="Tell us a little about your interest..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Membership Application</button>
+            </form>
+
+            <p class="terms">By clicking submit, you agree to uphold the club's values and traditions.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sonatoni Club - Unity in Devotion</p>
+    </footer>
+
+</body>
+</html>
